@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 String selectedCity = (String) cityList.getItemAtPosition(position);
                 Intent intent = new Intent(MainActivity.this, ShowActivity.class);
                 intent.putExtra("selectedCity", selectedCity);
-                startActivity(intent);
+                MainActivity.this.startActivity(intent);
             }
         });
 
